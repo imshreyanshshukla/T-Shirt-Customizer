@@ -22,6 +22,15 @@ const Shirt = () => {
         dispose={null}
       >
 
+        {snap.isFullTexture && (
+          <Decal
+            position={[0,0,0]}
+            rotation={[0,0,0]}
+            scale={1}
+            map = {fullTexture}
+          />
+        )}
+
       </mesh>
     </group>
   )
